@@ -41,6 +41,8 @@ function randomText (arr){
     return item
 }
 
-app.listen(4000,()=>{
-    console.log('listening on 4000')
-})
+// listen on port
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`listening on ${port}`);
+});
